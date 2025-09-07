@@ -1,0 +1,66 @@
+/* Estilos básicos de la página */
+body {
+    background-color: #87CEEB; /* Celeste cielo - un tono medio */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedores y cartas de Bootstrap */
+.container {
+    max-width: 800px;
+}
+
+/* Las tarjetas ahora también serán celestes claros */
+.card {
+    border-radius: 15px;
+    background-color: #ADD8E6; /* Celeste suave para las tarjetas */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Mantener la sombra para un poco de profundidad */
+}
+
+.btn-lg {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilos para las secciones de la página */
+section {
+    padding: 50px 20px;
+    margin-bottom: 20px;
+    background-color: #B0E0E6; /* Celeste claro para las secciones */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333; /* Puedes mantener este oscuro o cambiarlo a un celeste oscuro */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* Estilos para el lector de voz */
+#lector-de-voz {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contenedorPrincipal {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Puedes añadir más estilos aquí si lo necesitas */
