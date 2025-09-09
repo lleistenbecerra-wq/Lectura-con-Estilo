@@ -22,6 +22,10 @@ const textosDePractica = [
 // Variable para seguir el índice del texto actual
 let textoActualIndex = 0;
 
+// Esta es la nueva URL de tu backend en Render.com.
+// Debes reemplazar 'https://tu-proyecto.onrender.com' con la URL real que te dé Render.
+const API_URL = 'https://tu-proyecto.onrender.com';
+
 // Función para cambiar el texto en la página
 function mostrarSiguienteTexto() {
     textoActualIndex = (textoActualIndex + 1) % textosDePractica.length;
@@ -94,7 +98,7 @@ async function enviarAudioAIA(audioBlob, textoLeido) {
         
         console.log('Preparando petición fetch...');
 
-        const response = await fetch('http://localhost:3000/analizar', {
+        const response = await fetch(`${API_URL}/analizar`, {
             method: 'POST',
             body: formData
         });
@@ -172,7 +176,7 @@ contactForm.addEventListener('submit', async (e) => {
     const data = Object.fromEntries(formData.entries());
 
     try {
-        const response = await fetch('http://localhost:3000/enviar_mensaje', { 
+        const response = await fetch(`${API_URL}/enviar_mensaje`, { 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
